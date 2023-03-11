@@ -110,10 +110,10 @@ def sort_files(dir_path, reverse_order=True):
         counter += 1
 
 
-tag = 'high_resolution'
-link_file = 'links.txt'
-load_folder = 'dataset01'
+tag = 'high_resolution'     # write tags here
+link_file = 'links.txt'     # pic links file name
+load_folder = 'dataset01'   # pic folder name
 
-load_links(tag, link_file)
-load_files(link_file, load_folder)
-sort_files(load_folder, reverse_order=True)
+load_links(tag, link_file)                      # loading pic links to link_file, links gets expired after some time :(
+load_files(link_file, load_folder)              # loading pictures to load_folder(up to 3500 pics approximately)
+sort_files(load_folder, reverse_order=True)     # sorting pics in newer-to-older order or older-to-newer
